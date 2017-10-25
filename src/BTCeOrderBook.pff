@@ -1,0 +1,1445 @@
+﻿
+  <FileID>e52ea6ff-b868-4dbd-8742-9138fc6042fa</FileID>
+  <LastExport>131533674960023274</LastExport>
+  <FileVersion>1.2</FileVersion>
+  <Object type="System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="formMain" children="Controls">
+    <Property name="ClientSize">1160, 604</Property>
+    <Property name="Icon">
+      <Binary>AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8B////Af///wG7u7kPzMvKQdHPz5fT0tHZ1tbV99nZ2ffZ2NjZ1NPSmc7Ny0G8u7sP////Af///wH///8B////Af///wG+vrkZ1tXVlebm5uft7e3/5ubm/9/f3//j4+P/6+vr/+7u7v/l5eTn1dXVlb6+uRn///8B////Af///wG+vrkZ2dnYrfb19fv39/f/6enp/+Tj4//q6en/6urp/+Pi4f/j4+L/7Ozs/+vr6/nV1dWvurq6Gf///wG7ubkP19fWlff39/n29vb/5+fm/+bm5f/n5ub/6unp/+/v7//v7u7/4+Li/93d3f/k5OT/5ubm+9LR0ZW7u7kPzc3MQerq6uf6+vr/5+bl/+Pi4v/t7ez/7Ozs/+jo6P/i4uL/4ODg/+jn5//h4eD/4eDf/+Li4v/c3Nvny8nIQdbU1Jn39/f/7ezs/+zs6//X1tb/6+rq//39/f/z8/P/7e3s/+Li4v/h4eH/5eXl//X09P/k5OT/6Ojo/9DPz5na2trZ9/f3/+no6P/5+fn/3Nvb/+fn5//7+/v/2dnY/+bm5v/k4+P/3t3d/+rq6f/8/Pz/6eno//X19f/a2dnZ2tnZ9+vr6//l5OT/9/f3/+fm5v/n5ub/9fX1/+Df3v/19fX//f39//n5+f/y8fD/9PPy/+zr6//4+Pj/4eDg99XU1Pfi4uL/4+Li/+/u7f/y8vH/3d3c/+bm5v/q6ur/2trZ/+vr6//7+/v//Pz8//X19P/m5eX/+fn5/+Dg3/fY19fZ7Ozs/+bm5f/39vb/7u7t/+Hh4P/a2tr/5eXl/+Hg4P/h4OD/6Ojo//z8/P/9/f3/6Ofn//39/f/d3d3Z1dPTmfT09P/r6+v/+Pf3//r6+v/m5eX/397e/+fn5//S0dH/4eDg/9jX1v/w8O//9PPz/+7t7f/5+fn/1tXVmc3NzEHq6enp+fn5/+rq6v/5+fj/9vX1/+bl5f/5+fn/4eDg/+vr6//o5+f/7u3t/+Pi4f/39/f/6enp583NzEG5t7cR1tbVl/b29vv19fX/6ejo//Pz8//n5+f/6Ofn/9zb2//q6en/9PT0/+fn5v/p6en/7u7u+9bW1ZW7u7kP////Ab+6uhnZ2div9vb2+/r6+v/t7Oz/5eTk/+bl5f/l5OT/4eHg/+Xk5P/m5ub/5eXl+9TT06+6uroZ////Af///wH///8Bu7q6GdfW1pXq6urn+fn5//39/f/5+fn/+fn5//n5+f/x8fH/4eHh59LR0ZW6uroZ////Af///wH///8B////Af///wG8u7kPzMvLQdfW1pnd3dzZ4uHh9+Lh4ffd3NzZ1dTTmc3MykG8u7sP////Af///wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w==</Binary>
+    </Property>
+    <Property name="MainMenuStrip">
+      <Reference name="menustrip1" />
+    </Property>
+    <Property name="Name">formMain</Property>
+    <Property name="StartPosition">CenterScreen</Property>
+    <Property name="Text">BTC-e Cockpit</Property>
+    <Event name="Load">FormEvent_Load</Event>
+    <Object type="System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tbar_opacity" children="Controls">
+      <Property name="LargeChange">2</Property>
+      <Property name="Location">1034, 567</Property>
+      <Property name="Minimum">3</Property>
+      <Property name="Name">tbar_opacity</Property>
+      <Property name="Size">117, 45</Property>
+      <Property name="TabIndex">28</Property>
+      <Property name="Value">10</Property>
+      <Event name="Scroll">tbar_opacity_Scroll</Event>
+    </Object>
+    <Object type="System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="combo_pairs" children="Controls">
+      <Property name="FormattingEnabled">True</Property>
+      <Property name="Location">1073, 1</Property>
+      <Property name="Name">combo_pairs</Property>
+      <Property name="Size">72, 21</Property>
+      <Property name="TabIndex">6</Property>
+      <Event name="SelectedIndexChanged">combo_pairs_SelectedIndexChanged</Event>
+    </Object>
+    <Object type="System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tab_info" children="Controls">
+      <Property name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+      <Property name="Location">12, 424</Property>
+      <Property name="Name">tab_info</Property>
+      <Property name="SelectedIndex">0</Property>
+      <Property name="Size">1139, 121</Property>
+      <Property name="TabIndex">7</Property>
+      <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tab_finances" children="Controls">
+        <Property name="BackColor">Control</Property>
+        <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+        <Property name="Location">4, 22</Property>
+        <Property name="Name">tab_finances</Property>
+        <Property name="Padding">3, 3, 3, 3</Property>
+        <Property name="Size">1131, 95</Property>
+        <Property name="TabIndex">0</Property>
+        <Property name="Text">Finances</Property>
+        <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_updateavailfunds" children="Controls">
+          <Property name="Image">
+            <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+          </Property>
+          <Property name="ImageAlign">TopLeft</Property>
+          <Property name="Location">1084, 58</Property>
+          <Property name="Name">btn_updateavailfunds</Property>
+          <Property name="Size">29, 29</Property>
+          <Property name="TabIndex">1</Property>
+          <Property name="UseVisualStyleBackColor">True</Property>
+          <Event name="Click">btn_updateavailfunds_Click</Event>
+        </Object>
+        <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dgvfunds" children="Controls">
+          <Property name="AllowUserToAddRows">False</Property>
+          <Property name="AllowUserToDeleteRows">False</Property>
+          <Property name="BackgroundColor">Control</Property>
+          <Property name="BorderStyle">None</Property>
+          <Property name="ColumnHeadersBorderStyle">Single</Property>
+          <Property name="ColumnHeadersDefaultCellStyle">
+            <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+              <Property name="Alignment">MiddleLeft</Property>
+              <Property name="BackColor">Control</Property>
+              <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+              <Property name="ForeColor">WindowText</Property>
+              <Property name="SelectionBackColor">White</Property>
+              <Property name="SelectionForeColor">Black</Property>
+              <Property name="WrapMode">True</Property>
+            </InstanceDescriptor>
+          </Property>
+          <Property name="ColumnHeadersHeightSizeMode">AutoSize</Property>
+          <Property name="DefaultCellStyle">
+            <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+              <Property name="Alignment">MiddleLeft</Property>
+              <Property name="BackColor">Window</Property>
+              <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+              <Property name="ForeColor">ControlText</Property>
+              <Property name="SelectionBackColor">White</Property>
+              <Property name="SelectionForeColor">Black</Property>
+              <Property name="WrapMode">False</Property>
+            </InstanceDescriptor>
+          </Property>
+          <Property name="Location">11, 6</Property>
+          <Property name="Name">dgvfunds</Property>
+          <Property name="ReadOnly">True</Property>
+          <Property name="RowHeadersBorderStyle">Single</Property>
+          <Property name="RowHeadersVisible">False</Property>
+          <Property name="Size">1110, 67</Property>
+          <Property name="TabIndex">0</Property>
+        </Object>
+      </Object>
+      <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tab_orders" children="Controls">
+        <Property name="BackColor">Control</Property>
+        <Property name="Location">4, 22</Property>
+        <Property name="Name">tab_orders</Property>
+        <Property name="Padding">3, 3, 3, 3</Property>
+        <Property name="Size">1131, 95</Property>
+        <Property name="TabIndex">1</Property>
+        <Property name="Text">Active Orders</Property>
+        <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dgv_orders" children="Controls">
+          <Property name="AllowUserToAddRows">False</Property>
+          <Property name="AllowUserToDeleteRows">False</Property>
+          <Property name="BackgroundColor">Control</Property>
+          <Property name="BorderStyle">None</Property>
+          <Property name="ColumnHeadersBorderStyle">Single</Property>
+          <Property name="ColumnHeadersHeightSizeMode">AutoSize</Property>
+          <Property name="DefaultCellStyle">
+            <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+              <Property name="Alignment">MiddleLeft</Property>
+              <Property name="BackColor">Window</Property>
+              <Property name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+              <Property name="ForeColor">ControlText</Property>
+              <Property name="SelectionBackColor">Control</Property>
+              <Property name="SelectionForeColor">Black</Property>
+              <Property name="WrapMode">False</Property>
+            </InstanceDescriptor>
+          </Property>
+          <Property name="Location">6, 6</Property>
+          <Property name="Name">dgv_orders</Property>
+          <Property name="ReadOnly">True</Property>
+          <Property name="Size">558, 83</Property>
+          <Property name="TabIndex">0</Property>
+          <Event name="RowHeaderMouseClick">dgv_orders_RowHeaderMouseClick</Event>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_noactiveorders" children="Controls">
+          <Property name="Font">Microsoft Sans Serif, 12pt, style=Bold</Property>
+          <Property name="Location">118, 34</Property>
+          <Property name="Name">lbl_noactiveorders</Property>
+          <Property name="Size">186, 23</Property>
+          <Property name="TabIndex">29</Property>
+          <Property name="Text">NO ACTIVE ORDERS</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_cancelorder" children="Controls">
+          <Property name="Enabled">False</Property>
+          <Property name="Image">
+            <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAO/SURBVDhPrVRtTJNXFH4EESm0tBflw4kfdFP3R03UBDXxK0ZjjPGHDL/2R1iiJMsg8TNK1Ar7o7hEjTZRBjaWqhFwClaNjoxtBkaFvoZqsmy2+BmV21praK0gd/e8LW2NyX75JKfNPe85z73n3OdcCCE+q6k/w8PD8Hq94Jyr1t/P8egZh+cJx2sfh3jHM0WYZ77x86S+pxxkr2TMSDzZ0NBQnNDn88FoNIIxBl0mQ7qWYe0CNueXfexkoIH9La6xoLCzUOgCc986xOq/XcYWUZxWx9QcMpfLFSekHXQ6HQhjk5F65jscE83y0yWInmo4bGWwnNuGus6DuCNs0n8ForEC1iwN9GqShNPpjBN6vRxauaMmBam/H8A1cQviyk7Y5hbg62h8DDMmYMrZMpwUNyDuH0VXbiYM5L93T4kT0gnHaBhqS3CcyGo2Y5+a/T/4YSVKxHWIm7vRnDSKTphASBewppDNpjJbd+IiJRiz8YWtAubJWchRGSRSkoGft+HIqllYQevTpagh0nXzsOqPzgRCt7zNlr3MLBohZubDSMHXd8Em2iBcR9CVpwcj36VynBI3Ify1eGZIR8Z4LbRBK97+Vgl7pyOB0O/jSQMN7KGzCncpkTBzEqZ5TuCBsEN0V6O9uQKnxVWI4YsIlizBWlmmLBRo3Y6msAUDT/5VtDFCVWd29s5ahnqVLYovczDRVQOHuCzDpAUs6N84P1LuCKqKsJ9a9Z4rBXHCMNdLwrBlK2qjcTFc3YF6VUJNEH0n4BqnRUb0kwrTOlTSZh+8ijFGGPDz5PAF9rjjAO5E45CaglFqz2SZsqQ3L81wi5ZIT/OzkB0NQ1M5GgatCD93K/oYoUeOUpuJWQbPY3BqNiZQoO17KSGpNerZ+kIsL8hGrtpT6fvnJzh1aUjLGItUfx14pwntXXcTLoVmc9NStpBOc64MZiLcMB9FryzwbFmENbQmTM/DpL5TuC8n6Sitq4uwhzbYshjF7R0JhPQYaOT8Xi6XUpEBUrSllDAu4+N+EfQapNH/5gVYTQfoqkL7mNFI7kkUNo0ePQiSQC/HyUFiNZficJ4hor9ESP2lHyrGbiJ7UQv3VznIJ/8no2cwROY8Vwdm34NGIn1vxUDrDjT/+A1MJA+pRVugDl6qoqMKbdNzMVlNklCUTwjVGY+huBCrb1eiJWhBgCSjas2K4J8m/Fq6FBtGJ0WEPYKPCOlx7O3tVZ1k1A+azb/kONEEhPuVqYNepeC5R9E7uuU3eQHdPZHYEQuFQnHCz2cC/wFvqsA6BxAhtwAAAABJRU5ErkJggg==</Binary>
+          </Property>
+          <Property name="Location">570, 34</Property>
+          <Property name="Name">btn_cancelorder</Property>
+          <Property name="Size">26, 26</Property>
+          <Property name="TabIndex">25</Property>
+          <Property name="UseVisualStyleBackColor">True</Property>
+          <Event name="Click">btn_cancelorder_Click</Event>
+        </Object>
+        <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_updateorderinfo" children="Controls">
+          <Property name="Image">
+            <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+          </Property>
+          <Property name="Location">570, 6</Property>
+          <Property name="Name">btn_updateorderinfo</Property>
+          <Property name="Size">26, 26</Property>
+          <Property name="TabIndex">24</Property>
+          <Property name="TextAlign">TopLeft</Property>
+          <Property name="UseVisualStyleBackColor">True</Property>
+          <Event name="Click">btn_updateorderinfo_Click</Event>
+        </Object>
+      </Object>
+      <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tab_orderhistory" children="Controls">
+        <Property name="BackColor">Control</Property>
+        <Property name="Location">4, 22</Property>
+        <Property name="Name">tab_orderhistory</Property>
+        <Property name="Padding">3, 3, 3, 3</Property>
+        <Property name="Size">1131, 95</Property>
+        <Property name="TabIndex">2</Property>
+        <Property name="Text">Trade History</Property>
+        <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dgv_trades" children="Controls">
+          <Property name="AllowUserToAddRows">False</Property>
+          <Property name="AllowUserToDeleteRows">False</Property>
+          <Property name="BackgroundColor">Control</Property>
+          <Property name="BorderStyle">None</Property>
+          <Property name="ColumnHeadersBorderStyle">Single</Property>
+          <Property name="ColumnHeadersHeightSizeMode">AutoSize</Property>
+          <Property name="DefaultCellStyle">
+            <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+              <Property name="Alignment">MiddleLeft</Property>
+              <Property name="BackColor">Window</Property>
+              <Property name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+              <Property name="ForeColor">ControlText</Property>
+              <Property name="SelectionBackColor">Control</Property>
+              <Property name="SelectionForeColor">Black</Property>
+              <Property name="WrapMode">False</Property>
+            </InstanceDescriptor>
+          </Property>
+          <Property name="Location">6, 6</Property>
+          <Property name="Name">dgv_trades</Property>
+          <Property name="ReadOnly">True</Property>
+          <Property name="Size">807, 83</Property>
+          <Property name="TabIndex">1</Property>
+        </Object>
+      </Object>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="gbox_buy" children="Controls">
+      <Property name="Location">599, 32</Property>
+      <Property name="Name">gbox_buy</Property>
+      <Property name="Size">546, 381</Property>
+      <Property name="TabIndex">5</Property>
+      <Property name="TabStop">False</Property>
+      <Property name="Text">Buy</Property>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_buyfee" children="Controls">
+        <Property name="Location">406, 64</Property>
+        <Property name="Name">txt_buyfee</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">28</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_buyfee" children="Controls">
+        <Property name="Location">376, 67</Property>
+        <Property name="Name">lbl_buyfee</Property>
+        <Property name="Size">34, 19</Property>
+        <Property name="TabIndex">29</Property>
+        <Property name="Text">Fee:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_buyorder" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANiSURBVDhPjZRrSNNRGMaf2ZCSwhIhqEwhoeimJhayYFuaXbCytVKKLh/UD32QKIT6VCGRVpKNkNAoKUZelhBGCUFF5IUo1EShm0ZE0hKHXbxA+fSenb/LzUU98LCdc973x3vO+b8HJMN6QvykowNlVVU4cvKk30Xi8zJ+JvPhcpTDTl7zeJBtt8/eHRW1/RRQdgWoFXvOAJU7gfz4qKglaXY76iQuNDdo4B0awiaHA3lAQRfw2r8cxp+AwWKgAsDCbRLvk7xpQK/Ph3SLZaYLuBkK+JufAF2zgbR1Fgt8kh8A/hJvzskxXQbcoUn/8jPgjQlYvUMqDQBrGhuxW84mNPh/fRFoku3Pq62tBX7K1GardU5PZOT7oMDMTLKpiWxtJRMTyYQE8vp18vlz0mr9EyceByYWA3nLkpNNaO/txR6zeQddLtLjIQ8fJhsapHDR27dkQQFZWkp+/67nlEZHyUOHyAULyA0byP37eSIi4pZUGY1LN26gBDjPujoj2lB/P7l3L9ndrccDA+T9+/r/pL5+1b8Sew/oEeBynJMPtRqoo9utFyfV1kYWFmpwSQm5ZQsZF0cePGgETNHLl+wABgRoxYXqalwFbk8DKlVWamhNDTkyQg4OkitXknl5RoAh2UUn4BXgRpRKheeAK7x7l/R6yWPHyPJyIzKMhofJVavIXbvICWlQpd5ePgT6BbgeLjlDB1DIrCwyO5tsbCTz88miIh0cqh8/yG/fyPR00mYjDxwgk5JYCjwW4FJ0yS0vmjVryRdgmCkp5Pi4vsV9+8jiYoMiUtX4fGRfn78iNjcHfTqpwFkBxsiISLHZcBRw0WQi7XZdhTozp5M8fZocG9M32tlJDg2RVVVkdHQAdht4J7CMpORksx/YIJ0iWvgU6PYHqe2rKtUl5OaS9fVkT48eqy3Onx+AfQTGFgEnJD/W3ykKqLw1Jweq0duBVwGoUkWFhra0kPHx9O/CgH0ARtcA5QJLdDgcsuBf0UD1WqyVV0M1uvTmnRGT6Zc6bEZG6jCzWf8arpfnLU5XlmixWGYEvTZToTudTrX9mATpzePy+kjXd78APsmH+/kB0CeP7KM0fQEZ4lin02mahE0DTtrtdmNFqtxbRMRcSVoutomzxOvFy2Q+Zk1qqlnFBecSvwEU7a3fBdtY6QAAAABJRU5ErkJggg==</Binary>
+        </Property>
+        <Property name="Location">456, 112</Property>
+        <Property name="Name">btn_buyorder</Property>
+        <Property name="Size">50, 40</Property>
+        <Property name="TabIndex">26</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btn_buyorder_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_buytotal" children="Controls">
+        <Property name="Location">406, 88</Property>
+        <Property name="Name">txt_buytotal</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">13</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_buyprice" children="Controls">
+        <Property name="Location">406, 40</Property>
+        <Property name="Name">txt_buyprice</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">12</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_buyavail" children="Controls">
+        <Property name="Location">406, 16</Property>
+        <Property name="Name">txt_buyavail</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">11</Property>
+        <Event name="Leave">txt_buyavail_Leave</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lblbuy_volume" children="Controls">
+        <Property name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property name="Location">16, 358</Property>
+        <Property name="Name">lblbuy_volume</Property>
+        <Property name="Size">344, 19</Property>
+        <Property name="TabIndex">4</Property>
+        <Property name="Text">buy_volume</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btnupdatetopbuyprice" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+        </Property>
+        <Property name="Location">510, 38</Property>
+        <Property name="Name">btnupdatetopbuyprice</Property>
+        <Property name="Size">26, 26</Property>
+        <Property name="TabIndex">19</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btnupdatetopbuyprice_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dgv_bid" children="Controls">
+        <Property name="AllowUserToAddRows">False</Property>
+        <Property name="AllowUserToDeleteRows">False</Property>
+        <Property name="Anchor">Top, Bottom, Left, Right</Property>
+        <Property name="BackgroundColor">Control</Property>
+        <Property name="BorderStyle">None</Property>
+        <Property name="ColumnHeadersDefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Control</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+            <Property name="ForeColor">WindowText</Property>
+            <Property name="SelectionBackColor">White</Property>
+            <Property name="SelectionForeColor">Black</Property>
+            <Property name="WrapMode">True</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="DefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Window</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+            <Property name="ForeColor">ControlText</Property>
+            <Property name="SelectionBackColor">White</Property>
+            <Property name="SelectionForeColor">Black</Property>
+            <Property name="WrapMode">False</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="Location">16, 19</Property>
+        <Property name="Name">dgv_bid</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="RowHeadersDefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Control</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+            <Property name="ForeColor">WindowText</Property>
+            <Property name="SelectionBackColor">Highlight</Property>
+            <Property name="SelectionForeColor">HighlightText</Property>
+            <Property name="WrapMode">True</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="RowHeadersVisible">False</Property>
+        <Property name="Size">344, 334</Property>
+        <Property name="TabIndex">3</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btnupdatecurrentusd" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+        </Property>
+        <Property name="ImageAlign">TopLeft</Property>
+        <Property name="Location">510, 13</Property>
+        <Property name="Name">btnupdatecurrentusd</Property>
+        <Property name="Size">26, 26</Property>
+        <Property name="TabIndex">18</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btnupdatecurrentusd_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_buyavail" children="Controls">
+        <Property name="Location">372, 18</Property>
+        <Property name="Name">lbl_buyavail</Property>
+        <Property name="Size">37, 19</Property>
+        <Property name="TabIndex">15</Property>
+        <Property name="Text">USD:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_buytotal" children="Controls">
+        <Property name="Location">374, 90</Property>
+        <Property name="Name">lbl_buytotal</Property>
+        <Property name="Size">35, 19</Property>
+        <Property name="TabIndex">17</Property>
+        <Property name="Text">LTC:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_buyprice" children="Controls">
+        <Property name="Location">371, 43</Property>
+        <Property name="Name">lbl_buyprice</Property>
+        <Property name="Size">36, 19</Property>
+        <Property name="TabIndex">16</Property>
+        <Property name="Text">Price:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_buycalc" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAASBSURBVDhPbZRZTJRXFMe/p8b2vUlrW2NtlFUYRQYNYGtdarQ+2KQtSfW1xZjaglKB0qitCNQhojAwMCjLOIAsw8AwDAwDDAybLCLbsMgmxbQyojMsiqL+eqExXdKHX86937n559zzP/eTAEmhUHzl6+s7ExgYSFBQ0P8SHPxPgpHJZI7w8PCw5eVlSUpKSvry8OHPlqam77H09BmLj5+wsPiYecHcwiJz8wu4Vpj7i0eu+dX9jGOWb0JDCQ8Li5bkcvlt+9Aw92dd2NpuUW+7SV1jGzXWFqrrmjFZbBjNDRiqrJRV1qE31pKnq6K6oZ37Dx6uVDkjBQYGPRqb/A370CiJhhYSWia42DwumEAh1opX8RVtU5wvv0nOjQqmfndw8NNDL6SA7TuctweGGR8e5Vj9IJJ+lDWGMdaU/5vXxbcVpPJx9lcPoS8zYx+9y75P9iP5ywOcrV09dPcN0zxyF93IFLndI+T3jlJkn0TbN0Z+/xiaW4OoWvrI6rRT3NZDbpGRrv4RPt6z96Xk5y931jZ10N4zSG1jO7GaeiK1rURnW8XBamrMVjSFlURnmjmT10pkejXJ14q5WlBOU2c/H+7ajbTFb5urwtJEW2cPodes7NEOYJte4FT9NLtTGtGUmPgirZ6DRSN8XjHGweI7HE6xkJ5bgqWpi6Cdu5BkW/xcJaLjFlsH7ultpNlnxejAuOsp8gI7p3OqWZvegaLXwfijpdX8W+mdKLJKMdY2sz1wJ5KPbKvrekklVnEVub6P/X0OFoVI+sxj3qu8g1JXz/qSfuS3Z/j63hyBQmydboCUbB1FFXXIdwQhefvIXGqtHrNQVdu6WW93EPLkJZ7iSqEN/ZQWGjhT08Fbo05ee/B0NUYZW0hOzyO3pBo/+Q4kr82+rpSsQvRmG6aVoRKDphDdz7G2odOZUOeVo8krJctYx0VrO2phrTJDS3yaFnWBgS3bApA8vH2civTrlIqJ1OrNhKtMnMpu5rjKQkKmjqx8PRfVhXyfZiKh8CbfKSs5ezmXeGUuyTk6fLb6I7l7bXbGJmdRbKjhSJqZE1WTZPQ4UHY5OJBm41LmDQ4lWzhinGBoblnESQ4kmYm9co1EdQFeMj8kN09v59nEDLTiPWxQtRLR9ceqO73OJd7J7uWk2sDbK+6Ihk8vPkM1KNzJ6OKnK5rVajx8tiJt8vByRscpKSiuxFfXw/Ghh8wLkSph55sVIyi0RuGGGCrhSuPCM/YOPGBd6YCoJIdzl67i5i1bFXkYcf4KOXllXDI1E3BnFtnccz66/4Swum5UKg2RBhvBU3PcEOIeEy5OlNRxLiGVGIWaTV5CxN3Te+hYVBxp18uEkB51uYX45lsoTQ2kZuYTn6ohMSWHy+KtRFlaiBNu/fyriqgEFREXlHzg5jkvxcT8+K2br5yT51OIScwkWiRjYpVEXUglUqxPrxCv4geRjzx3mYhfkomIS+OkOLM1aB9Hjx5Nkl68eC6Jv9yptes2LG709sNt83/ZhpvP37iv4s+77298HhISkuF0Ot/4E3HTp2WgbiceAAAAAElFTkSuQmCC</Binary>
+        </Property>
+        <Property name="Location">405, 112</Property>
+        <Property name="Name">btn_buycalc</Property>
+        <Property name="Size">50, 40</Property>
+        <Property name="TabIndex">14</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btn_buycalc_Click</Event>
+      </Object>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="gbox_sell" children="Controls">
+      <Property name="Location">12, 32</Property>
+      <Property name="Name">gbox_sell</Property>
+      <Property name="Size">546, 381</Property>
+      <Property name="TabIndex">4</Property>
+      <Property name="TabStop">False</Property>
+      <Property name="Text">Sell</Property>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_sellfee" children="Controls">
+        <Property name="Location">407, 68</Property>
+        <Property name="Name">txt_sellfee</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">26</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_sellfee" children="Controls">
+        <Property name="Location">376, 71</Property>
+        <Property name="Name">lbl_sellfee</Property>
+        <Property name="Size">34, 19</Property>
+        <Property name="TabIndex">27</Property>
+        <Property name="Text">Fee:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_sellorder" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAANiSURBVDhPjZRrSNNRGMaf2ZCSwhIhqEwhoeimJhayYFuaXbCytVKKLh/UD32QKIT6VCGRVpKNkNAoKUZelhBGCUFF5IUo1EShm0ZE0hKHXbxA+fSenb/LzUU98LCdc973x3vO+b8HJMN6QvykowNlVVU4cvKk30Xi8zJ+JvPhcpTDTl7zeJBtt8/eHRW1/RRQdgWoFXvOAJU7gfz4qKglaXY76iQuNDdo4B0awiaHA3lAQRfw2r8cxp+AwWKgAsDCbRLvk7xpQK/Ph3SLZaYLuBkK+JufAF2zgbR1Fgt8kh8A/hJvzskxXQbcoUn/8jPgjQlYvUMqDQBrGhuxW84mNPh/fRFoku3Pq62tBX7K1GardU5PZOT7oMDMTLKpiWxtJRMTyYQE8vp18vlz0mr9EyceByYWA3nLkpNNaO/txR6zeQddLtLjIQ8fJhsapHDR27dkQQFZWkp+/67nlEZHyUOHyAULyA0byP37eSIi4pZUGY1LN26gBDjPujoj2lB/P7l3L9ndrccDA+T9+/r/pL5+1b8Sew/oEeBynJMPtRqoo9utFyfV1kYWFmpwSQm5ZQsZF0cePGgETNHLl+wABgRoxYXqalwFbk8DKlVWamhNDTkyQg4OkitXknl5RoAh2UUn4BXgRpRKheeAK7x7l/R6yWPHyPJyIzKMhofJVavIXbvICWlQpd5ePgT6BbgeLjlDB1DIrCwyO5tsbCTz88miIh0cqh8/yG/fyPR00mYjDxwgk5JYCjwW4FJ0yS0vmjVryRdgmCkp5Pi4vsV9+8jiYoMiUtX4fGRfn78iNjcHfTqpwFkBxsiISLHZcBRw0WQi7XZdhTozp5M8fZocG9M32tlJDg2RVVVkdHQAdht4J7CMpORksx/YIJ0iWvgU6PYHqe2rKtUl5OaS9fVkT48eqy3Onx+AfQTGFgEnJD/W3ykKqLw1Jweq0duBVwGoUkWFhra0kPHx9O/CgH0ARtcA5QJLdDgcsuBf0UD1WqyVV0M1uvTmnRGT6Zc6bEZG6jCzWf8arpfnLU5XlmixWGYEvTZToTudTrX9mATpzePy+kjXd78APsmH+/kB0CeP7KM0fQEZ4lin02mahE0DTtrtdmNFqtxbRMRcSVoutomzxOvFy2Q+Zk1qqlnFBecSvwEU7a3fBdtY6QAAAABJRU5ErkJggg==</Binary>
+        </Property>
+        <Property name="Location">457, 116</Property>
+        <Property name="Name">btn_sellorder</Property>
+        <Property name="Size">50, 40</Property>
+        <Property name="TabIndex">25</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btn_sellorder_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_selltotal" children="Controls">
+        <Property name="Location">407, 92</Property>
+        <Property name="Name">txt_selltotal</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">9</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lblsell_volume" children="Controls">
+        <Property name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+        <Property name="Location">15, 359</Property>
+        <Property name="Name">lblsell_volume</Property>
+        <Property name="Size">344, 19</Property>
+        <Property name="TabIndex">3</Property>
+        <Property name="Text">sell_volume</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btnupdatetopsellprice" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+        </Property>
+        <Property name="Location">511, 41</Property>
+        <Property name="Name">btnupdatetopsellprice</Property>
+        <Property name="Size">26, 26</Property>
+        <Property name="TabIndex">24</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btnupdatetopsellprice_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="dgv_ask" children="Controls">
+        <Property name="AllowUserToAddRows">False</Property>
+        <Property name="AllowUserToDeleteRows">False</Property>
+        <Property name="Anchor">Top, Bottom, Left, Right</Property>
+        <Property name="BackgroundColor">Control</Property>
+        <Property name="BorderStyle">None</Property>
+        <Property name="ColumnHeadersBorderStyle">Single</Property>
+        <Property name="ColumnHeadersDefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Firebrick</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+            <Property name="ForeColor">WindowText</Property>
+            <Property name="SelectionBackColor">White</Property>
+            <Property name="SelectionForeColor">HighlightText</Property>
+            <Property name="WrapMode">True</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="ColumnHeadersHeight">20</Property>
+        <Property name="DefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Window</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+            <Property name="ForeColor">ControlText</Property>
+            <Property name="SelectionBackColor">White</Property>
+            <Property name="SelectionForeColor">Black</Property>
+            <Property name="WrapMode">False</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="Location">15, 19</Property>
+        <Property name="Name">dgv_ask</Property>
+        <Property name="ReadOnly">True</Property>
+        <Property name="RowHeadersBorderStyle">Single</Property>
+        <Property name="RowHeadersDefaultCellStyle">
+          <InstanceDescriptor member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAV1N5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OQYEAAAAKlN5c3RlbS5XaW5kb3dzLkZvcm1zLkRhdGFHcmlkVmlld0NlbGxTdHlsZQYFAAAADFZvaWQgLmN0b3IoKQYGAAAABy5jdG9yKCkBAAAACgs=">
+            <Property name="Alignment">MiddleLeft</Property>
+            <Property name="BackColor">Control</Property>
+            <Property name="Font">Microsoft Sans Serif, 8.25pt</Property>
+            <Property name="ForeColor">WindowText</Property>
+            <Property name="SelectionBackColor">Highlight</Property>
+            <Property name="SelectionForeColor">HighlightText</Property>
+            <Property name="WrapMode">True</Property>
+          </InstanceDescriptor>
+        </Property>
+        <Property name="RowHeadersVisible">False</Property>
+        <Property name="ScrollBars">None</Property>
+        <Property name="Size">344, 334</Property>
+        <Property name="TabIndex">2</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_updatecurrentltc" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAALxSURBVDhPrZNfSJNRGMbfbV+bc9+mE3W26Whp0w2X/8rEOVGcMzOhaXhhREnpxJuoi0IRq7lmGS0SuknxwrDcTBtl4IUWJoFUlvPCmyLxzza3FQQSeCNv2/oQT8q6sAceDs973vfHOXAOIOJ/9a7FvXjX4l5MhI2NDXA6nTA8PLxlh8MBzpfOfVMfpyWOx3awP7UT+wsLCwSDCD6fDyiKgr/FFUXRmj6dS96U3g5c4DPlsDo6OggGEfx+P8TGxoYbOcCGdEN2cbHtVJ9uyDibMaLFtLGjqHyUO5d4XFZL8akw2GKxEAwihIAiWgjcKB6n2GrsMXy4iMdmavDwGwMqRwpRMZSDMqcak/pTfwo0wsJ/A4NXFtMxkNde0VPuasTC6TrMsGnfSuvTrqkc2l8HR3IxrkXWy5FQihAspIhAz5IbVJW52rKZRiyZOYfyCxozi8MCvoAPqe3ZA/wsUQnD2VJEoHfJAzpbTb9+vhmzegwTzAywKXYQy2ISqYjAwPcA+8RYk0s/Z0K5Ud3AzESU5WYk4I8AVTXe/KX8swmVxhwjM7NDXB6PFW+UtMBJ1g3rQJdmO4MA+td8YHCcn9a7TKhrq7Iy8zskUSQlK55kIDzk4J0Xdw3bGQTQs7gKeVfK2ko/NWL1a5PvQGaqnGFsicviQs7V/J74J8kIrWzPLZtVtJ1BAH2eNZCkSRMLRuu8pbMNWPH87LyiSFnEi4piUywOxMrEiZmXcrvkdhWKB/cj5MPlznYzwSCCP+AHIY+GmCNJet3kmfWi9/WonTyNOb1lLvX9gnfqgQK/fFSDCXYF0qa4weCBORZzpIcd/ClCoTB8NYFKnK+6VzyV9aoSMyf0qBzXYsqzLEx4oPDxqoStwRZ2qM/cGeGEgUAAZDIZ0DQN0Vx+aBUmaKTGlOpD15Nr024naKUtIkmMWsAVAB1Nh/u6u7sJBhE2NzfB6/WC2+3+41U3rC6uwMrX5bBXv62Ae5nZY7y+vk4wiLB3I/wGR78hijgDRCQAAAAASUVORK5CYII=</Binary>
+        </Property>
+        <Property name="Location">511, 16</Property>
+        <Property name="Name">btn_updatecurrentltc</Property>
+        <Property name="Size">26, 26</Property>
+        <Property name="TabIndex">23</Property>
+        <Property name="TextAlign">TopLeft</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btn_updatecurrentltc_Click</Event>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_sellavail" children="Controls">
+        <Property name="Location">407, 19</Property>
+        <Property name="Name">txt_sellavail</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">7</Property>
+        <Event name="Leave">txt_sellavail_Leave</Event>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_selltotal" children="Controls">
+        <Property name="Location">372, 95</Property>
+        <Property name="Name">lbl_selltotal</Property>
+        <Property name="Size">34, 19</Property>
+        <Property name="TabIndex">22</Property>
+        <Property name="Text">USD:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_sellprice" children="Controls">
+        <Property name="Location">407, 44</Property>
+        <Property name="Name">txt_sellprice</Property>
+        <Property name="Size">100, 20</Property>
+        <Property name="TabIndex">8</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_sellprice" children="Controls">
+        <Property name="Location">371, 47</Property>
+        <Property name="Name">lbl_sellprice</Property>
+        <Property name="Size">36, 19</Property>
+        <Property name="TabIndex">21</Property>
+        <Property name="Text">Price:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="lbl_sellavail" children="Controls">
+        <Property name="Location">374, 22</Property>
+        <Property name="Name">lbl_sellavail</Property>
+        <Property name="Size">45, 19</Property>
+        <Property name="TabIndex">20</Property>
+        <Property name="Text">LTC:</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="btn_sellcalc" children="Controls">
+        <Property name="Image">
+          <Binary>iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAASBSURBVDhPbZRZTJRXFMe/p8b2vUlrW2NtlFUYRQYNYGtdarQ+2KQtSfW1xZjaglKB0qitCNQhojAwMCjLOIAsw8AwDAwDDAybLCLbsMgmxbQyojMsiqL+eqExXdKHX86937n559zzP/eTAEmhUHzl6+s7ExgYSFBQ0P8SHPxPgpHJZI7w8PCw5eVlSUpKSvry8OHPlqam77H09BmLj5+wsPiYecHcwiJz8wu4Vpj7i0eu+dX9jGOWb0JDCQ8Li5bkcvlt+9Aw92dd2NpuUW+7SV1jGzXWFqrrmjFZbBjNDRiqrJRV1qE31pKnq6K6oZ37Dx6uVDkjBQYGPRqb/A370CiJhhYSWia42DwumEAh1opX8RVtU5wvv0nOjQqmfndw8NNDL6SA7TuctweGGR8e5Vj9IJJ+lDWGMdaU/5vXxbcVpPJx9lcPoS8zYx+9y75P9iP5ywOcrV09dPcN0zxyF93IFLndI+T3jlJkn0TbN0Z+/xiaW4OoWvrI6rRT3NZDbpGRrv4RPt6z96Xk5y931jZ10N4zSG1jO7GaeiK1rURnW8XBamrMVjSFlURnmjmT10pkejXJ14q5WlBOU2c/H+7ajbTFb5urwtJEW2cPodes7NEOYJte4FT9NLtTGtGUmPgirZ6DRSN8XjHGweI7HE6xkJ5bgqWpi6Cdu5BkW/xcJaLjFlsH7ultpNlnxejAuOsp8gI7p3OqWZvegaLXwfijpdX8W+mdKLJKMdY2sz1wJ5KPbKvrekklVnEVub6P/X0OFoVI+sxj3qu8g1JXz/qSfuS3Z/j63hyBQmydboCUbB1FFXXIdwQhefvIXGqtHrNQVdu6WW93EPLkJZ7iSqEN/ZQWGjhT08Fbo05ee/B0NUYZW0hOzyO3pBo/+Q4kr82+rpSsQvRmG6aVoRKDphDdz7G2odOZUOeVo8krJctYx0VrO2phrTJDS3yaFnWBgS3bApA8vH2civTrlIqJ1OrNhKtMnMpu5rjKQkKmjqx8PRfVhXyfZiKh8CbfKSs5ezmXeGUuyTk6fLb6I7l7bXbGJmdRbKjhSJqZE1WTZPQ4UHY5OJBm41LmDQ4lWzhinGBoblnESQ4kmYm9co1EdQFeMj8kN09v59nEDLTiPWxQtRLR9ceqO73OJd7J7uWk2sDbK+6Ihk8vPkM1KNzJ6OKnK5rVajx8tiJt8vByRscpKSiuxFfXw/Ghh8wLkSph55sVIyi0RuGGGCrhSuPCM/YOPGBd6YCoJIdzl67i5i1bFXkYcf4KOXllXDI1E3BnFtnccz66/4Swum5UKg2RBhvBU3PcEOIeEy5OlNRxLiGVGIWaTV5CxN3Te+hYVBxp18uEkB51uYX45lsoTQ2kZuYTn6ohMSWHy+KtRFlaiBNu/fyriqgEFREXlHzg5jkvxcT8+K2br5yT51OIScwkWiRjYpVEXUglUqxPrxCv4geRjzx3mYhfkomIS+OkOLM1aB9Hjx5Nkl68eC6Jv9yptes2LG709sNt83/ZhpvP37iv4s+77298HhISkuF0Ot/4E3HTp2WgbiceAAAAAElFTkSuQmCC</Binary>
+        </Property>
+        <Property name="Location">406, 116</Property>
+        <Property name="Name">btn_sellcalc</Property>
+        <Property name="Size">50, 40</Property>
+        <Property name="TabIndex">10</Property>
+        <Property name="UseVisualStyleBackColor">True</Property>
+        <Event name="Click">btn_sellcalc_Click</Event>
+      </Object>
+    </Object>
+    <Object type="System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="menustrip1" children="Controls">
+      <Property name="BackColor">GradientActiveCaption</Property>
+      <Property name="Items">
+        <Item type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="toolstripmenuitem1" />
+        </Item>
+        <Item type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+          <Reference name="optionsToolStripMenuItem" />
+        </Item>
+      </Property>
+      <Property name="Location">0, 0</Property>
+      <Property name="Name">menustrip1</Property>
+      <Property name="Size">1160, 24</Property>
+      <Property name="TabIndex">8</Property>
+      <Property name="Text">menustrip1</Property>
+    </Object>
+  </Object>
+  <Object type="System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="timer1">
+    <Property name="Enabled">True</Property>
+    <Property name="Interval">1000</Property>
+    <Event name="Tick">timer1_Tick</Event>
+  </Object>
+  <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelSells" children="Controls">
+    <Property name="Font">Microsoft Sans Serif, 9.75pt, style=Bold</Property>
+    <Property name="Location">23, 22</Property>
+    <Property name="Name">labelSells</Property>
+    <Property name="Size">300, 19</Property>
+    <Property name="TabIndex">6</Property>
+    <Property name="Text">Sells</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="toolstripmenuitem1">
+    <Property name="DropDownItems">
+      <Item type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <Reference name="exitToolStripMenuItem" />
+      </Item>
+    </Property>
+    <Property name="Name">toolstripmenuitem1</Property>
+    <Property name="Size">37, 20</Property>
+    <Property name="Text">File</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="optionsToolStripMenuItem">
+    <Property name="DropDownItems">
+      <Item type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <Reference name="wallThresholdToolStripMenuItem" />
+      </Item>
+      <Item type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <Reference name="refreshIntervalToolStripMenuItem" />
+      </Item>
+    </Property>
+    <Property name="Name">optionsToolStripMenuItem</Property>
+    <Property name="Size">61, 20</Property>
+    <Property name="Text">Options</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="exitToolStripMenuItem">
+    <Property name="Name">exitToolStripMenuItem</Property>
+    <Property name="Size">152, 22</Property>
+    <Property name="Text">Exit</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="wallThresholdToolStripMenuItem">
+    <Property name="DropDownItems">
+      <Item type="System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <Reference name="txt_wallthreshold" />
+      </Item>
+    </Property>
+    <Property name="Name">wallThresholdToolStripMenuItem</Property>
+    <Property name="Size">153, 22</Property>
+    <Property name="Text">Wall Threshold</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_wallthreshold">
+    <Property name="BackColor">Control</Property>
+    <Property name="BorderStyle">FixedSingle</Property>
+    <Property name="Name">txt_wallthreshold</Property>
+    <Property name="Size">100, 23</Property>
+    <Event name="KeyPress">txt_wallthreshold_KeyPress</Event>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="refreshIntervalToolStripMenuItem">
+    <Property name="DropDownItems">
+      <Item type="System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <Reference name="txt_refreshint" />
+      </Item>
+    </Property>
+    <Property name="Name">refreshIntervalToolStripMenuItem</Property>
+    <Property name="Size">155, 22</Property>
+    <Property name="Text">Refresh Interval</Property>
+  </Object>
+  <Object type="System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="txt_refreshint">
+    <Property name="BackColor">Control</Property>
+    <Property name="BorderStyle">FixedSingle</Property>
+    <Property name="Name">txt_refreshint</Property>
+    <Property name="Size">100, 23</Property>
+    <Event name="KeyPress">txt_refreshint_KeyPress</Event>
+  </Object>
+  <Code><![CDATA[#region Todo
+# None of this is likely to happen ;(
+# Pop ups focus on text box by default, <enter> clicks the "OK" button
+# Ensure proper form control names (ie: btn_ txt_)
+# Trade history
+# Graphs?
+#endregion
+
+#region Variables
+$global:refresh = 2000	; # number of seconds to wait between refreshing data
+$count = 14; # number of orders to return
+$rounddec = 8; # number of decimals to round
+$global:wall = 300; # any quantity above this number is considered a wall
+$wallcolor = "LightGray"
+
+$global:uri = "https://wex.nz"
+$global:apiuri = $uri + "/tapi"
+$tradepairs = @("btc_usd", "btc_rur", "btc_eur", "ltc_btc", "ltc_usd", "ltc_rur", "nmc_btc", "usd_rur", "eur_usd", "nvc_btc", "trc_btc", "ppc_btc", "ftc_btc")
+
+$progressPreference = 'silentlyContinue'
+#endregion
+
+#region Functions
+function PopUp([string] $message){
+	[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
+	[System.Windows.Forms.MessageBox]::Show($message)
+}
+
+function InputBox([string] $title, [string] $message, [string] $defaultText){
+	[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing")
+	[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
+	$userForm = New-Object System.Windows.Forms.Form
+	$userForm.Text = "$title"
+	$userForm.Size = New-Object System.Drawing.Size(380,260)
+	$userForm.StartPosition = "CenterScreen"
+    $userForm.AutoSize = $false
+    $userForm.MinimizeBox = $False
+    $userForm.MaximizeBox = $False
+    $userForm.SizeGripStyle= "Hide"
+    $userForm.WindowState = "Normal"
+    $userForm.FormBorderStyle="Fixed3D"
+   
+	$OKButton = New-Object System.Windows.Forms.Button
+	$OKButton.Location = New-Object System.Drawing.Size(135,180)
+	$OKButton.Size = New-Object System.Drawing.Size(50,23)
+	$OKButton.Text = "OK"
+	$OKButton.Add_Click({$value=$objTextBox.Text;$userForm.Close()})
+	$userForm.Controls.Add($OKButton)
+	$CancelButton = New-Object System.Windows.Forms.Button
+	$CancelButton.Location = New-Object System.Drawing.Size(185,180)
+	$CancelButton.Size = New-Object System.Drawing.Size(50,23)
+	$CancelButton.Text = "Cancel"
+	$CancelButton.Add_Click({$userForm.Close()})
+	$userForm.Controls.Add($CancelButton)
+	$userLabel = New-Object System.Windows.Forms.Label
+	$userLabel.Location = New-Object System.Drawing.Size(10,20)
+	$userLabel.Size = New-Object System.Drawing.Size(350,100)
+	$userLabel.Text = "$message"
+	$userForm.Controls.Add($userLabel)
+	$objTextBox = New-Object System.Windows.Forms.TextBox
+	$objTextBox.Location = New-Object System.Drawing.Size(135,150)
+	$objTextBox.Size = New-Object System.Drawing.Size(100,20)
+	$objTextBox.Text="$defaultText"
+	$objTextBox.AcceptsReturn=$true
+	$userForm.Controls.Add($objTextBox)
+	$userForm.Topmost = $True
+	$userForm.Opacity = 0.91
+	$userForm.ShowIcon = $False
+	$userForm.Add_Shown({$userForm.Activate()})
+	[void] $userForm.ShowDialog()
+	return $objTextBox.Text
+}
+
+function UpdateBTCeOrderBook{
+	
+	$result = (Invoke-WebRequest -Uri $depthuri -TimeoutSec 15).Content| ConvertFrom-Json
+	$ask = @()
+	$bid = @()
+	
+	# Build ask array
+	if($result.error -eq $null){
+		Set-Variable -Name sellhigh -Value $result.asks[0][0] -Scope Global
+		for($x=0;$x -lt $count;$x++){
+			$asktotal += $result.asks[$x][1]
+			$Builder = New-Object System.Object
+			$Builder | Add-Member -Type NoteProperty -Name "Price" -Value ([math]::round($result.asks[$x][0], $rounddec))
+			$Builder | Add-Member -Type NoteProperty -Name "Quantity" -Value ([math]::round($result.asks[$x][1], $rounddec))
+			$Builder | Add-Member -Type NoteProperty -Name "Total" -Value ([math]::round(($result.asks[$x][0])*($result.asks[$x][1]),2))
+			$ask += $Builder
+		}
+		
+		# Build bid array
+		Set-Variable -Name bidhigh -Value $result.bids[0][0] -Scope Global
+		for($x=0;$x -lt $count;$x++){
+			$bidtotal += $result.bids[$x][1]
+			$Builder = New-Object System.Object
+			$Builder | Add-Member -Type NoteProperty -Name "Price" -Value ([math]::round($result.bids[$x][0], $rounddec))
+			$Builder | Add-Member -Type NoteProperty -Name "Quantity" -Value ([math]::round($result.bids[$x][1], $rounddec))
+			$Builder | Add-Member -Type NoteProperty -Name "Total" -Value ([math]::round(($result.bids[$x][0])*($result.bids[$x][1]),2))
+			$bid += $Builder
+		}
+		
+		Load-DataGridView -DataGridView $dgv_ask -Item $ask
+		Load-DataGridView -DataGridView $dgv_bid -Item $bid
+		
+		# Ask wall visual changes
+		for($x=0;$x -le $dgv_ask.RowCount-1;$x++){
+			$currentcellval = $dgv_ask.Item(1,$x).Value
+			if ($currentcellval -ge $wall){
+				$dgv_ask.Item(0,$x).Style.BackColor = $wallcolor
+				$dgv_ask.Item(1,$x).Style.BackColor = $wallcolor
+				$dgv_ask.Item(2,$x).Style.BackColor = $wallcolor
+			}
+		}
+		
+		# Buy wall visual changes
+		for($x=0;$x -le $dgv_bid.RowCount-1;$x++){
+			$currentcellval = $dgv_bid.Item(1,$x).Value
+			if ($currentcellval -ge $wall){
+				$dgv_bid.Item(0,$x).Style.BackColor = $wallcolor
+				$dgv_bid.Item(1,$x).Style.BackColor = $wallcolor
+				$dgv_bid.Item(2,$x).Style.BackColor = $wallcolor
+			}
+		}
+		
+		$lblsell_volume.Text = "Sell Total: $([math]::round($asktotal,0))"
+		$lblbuy_volume.Text = "Buy Total: $([math]::round($bidtotal,0))"
+	}
+	else{PopUp("Error: $($result.error)")}
+}
+
+function GetBTCeFee($x){
+	$feeuri = "$($uri)/api/2/$x/fee"
+	$feeresult = (Invoke-WebRequest -Uri $feeuri).Content | ConvertFrom-Json
+	return $feeresult.trade
+}
+
+function GetStringHash([String] $String) { 
+	
+	$hmacsha = New-Object System.Security.Cryptography.HMACSHA512
+	$hmacsha.key = [Text.Encoding]::ASCII.GetBytes($apisecret)
+	$signature = $hmacsha.ComputeHash([Text.Encoding]::ASCII.GetBytes($String))
+	$sig = [string]::join("", ($signature | % {([int]$_).toString('x2')}))
+	return $sig
+}
+
+function GetUserInfo{
+	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+	$postdata = "method=getInfo&nonce=$nonce"
+	$signedpost = GetStringHash($postdata)
+	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+	##write-host $r
+	$response = ConvertFrom-Json $r
+	if($response.success -eq "1"){
+		$funds = @()
+		$Builder = New-Object System.Object
+		$Builder | Add-Member -Type NoteProperty -Name "USD" -Value $response.return.funds.usd
+		$Builder | Add-Member -Type NoteProperty -Name "BTC" -Value $response.return.funds.btc
+		$Builder | Add-Member -Type NoteProperty -Name "LTC" -Value $response.return.funds.ltc
+		$Builder | Add-Member -Type NoteProperty -Name "NMC" -Value $response.return.funds.nmc
+		$Builder | Add-Member -Type NoteProperty -Name "RUR" -Value $response.return.funds.rur
+		$Builder | Add-Member -Type NoteProperty -Name "EUR" -Value $response.return.funds.eur
+		$Builder | Add-Member -Type NoteProperty -Name "NVC" -Value $response.return.funds.nvc
+		$Builder | Add-Member -Type NoteProperty -Name "TRC" -Value $response.return.funds.trc
+		$Builder | Add-Member -Type NoteProperty -Name "PPC" -Value $response.return.funds.ppc
+		$Builder | Add-Member -Type NoteProperty -Name "FTC" -Value $response.return.funds.ftc
+		$Builder | Add-Member -Type NoteProperty -Name "XPM" -Value $response.return.funds.xpm
+		$funds += $Builder
+		
+		Load-DataGridView -DataGridView $dgvfunds -Item $funds
+		$global:availsellfunds = $funds.$pairfirst
+		$txt_sellavail.Text = $availsellfunds
+		$global:availbuyfunds = $funds.$pairsecond
+		$txt_buyavail.Text = $availbuyfunds
+	}
+	else{ PopUp("Information could not be retrieved from BTC-e with the given API key/secret. Account information will not be available until the issue is resolved.")}
+}
+
+function GetOrderInfo{
+	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+	$postdata = "method=OrderList&active=0&nonce=$nonce"
+	$signedpost = GetStringHash($postdata)
+	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+	#write-host $r
+	$response = ConvertFrom-Json $r
+	
+	if ($response.success -eq 1){
+		$dgv_orders.Visible = $true
+		$ordernumber += $response.return | gm | ?{$_.Name -match "^\d"} | Select Name
+		$orderhistory = @()
+	
+		foreach($order in $ordernumber){
+			$Builder = New-Object System.Object
+			$Builder | Add-Member -Type NoteProperty -Name "Order" -Value $order.name
+			$Builder | Add-Member -Type NoteProperty -Name "Pair" -Value $response.return.$($order.name).pair
+			$Builder | Add-Member -Type NoteProperty -Name "Type" -Value $response.return.$($order.name).type
+			$Builder | Add-Member -Type NoteProperty -Name "Amount" -Value $response.return.$($order.name).amount
+			$Builder | Add-Member -Type NoteProperty -Name "Rate" -Value $response.return.$($order.name).rate
+			$orderhistory += $Builder
+			Load-DataGridView -DataGridView $dgv_orders -Item $orderhistory
+		}
+	} 
+	elseif(($response.success -eq 0) -and ($response.error -eq "no orders")){
+		$dgv_orders.Visible = $false
+	}
+	else{PopUp("There was an issue accessing your order information. Error message from BTCe:`r`n`r`n$($response.error)")}
+}
+
+function GetTradeHistory{
+	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+	$postdata = "method=TradeHistory&nonce=$nonce"
+	$signedpost = GetStringHash($postdata)
+	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+	#write-host $r
+	$response = ConvertFrom-Json $r
+	
+	if ($response.success -eq 1){
+		#$dgv_trades.Visible = $true
+		$tradenumber += $response.return | gm | ?{$_.Name -match "^\d"} | Select Name
+		$tradehistory = @()
+	
+		foreach($trade in $tradenumber){
+		$Builder = New-Object System.Object
+			$Builder | Add-Member -Type NoteProperty -Name "Trade" -Value $trade.name
+			$Builder | Add-Member -Type NoteProperty -Name "OrderID" -Value $response.return.$($trade.name).order_id
+			$Builder | Add-Member -Type NoteProperty -Name "Pair" -Value $response.return.$($trade.name).pair
+			$Builder | Add-Member -Type NoteProperty -Name "Type" -Value $response.return.$($trade.name).type
+			$Builder | Add-Member -Type NoteProperty -Name "Amount" -Value $response.return.$($trade.name).amount
+			$Builder | Add-Member -Type NoteProperty -Name "Rate" -Value $response.return.$($trade.name).rate
+			$Builder | Add-Member -Type NoteProperty -Name "Is Your Order" -Value $response.return.$($trade.name).is_your_order
+			$tradehistory += $Builder
+			
+			##write-host $tradehistory
+			Load-DataGridView -DataGridView $dgv_trades -Item $tradehistory
+		}
+	}
+}
+
+#function GetTransactionHistory{
+#	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+#	$postdata = "method=TradeHistory&nonce=$nonce"
+#	$signedpost = GetStringHash($postdata)
+#	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+#	#write-host $r
+#	$response = ConvertFrom-Json $r
+#	
+#	if ($response.success -eq 1){
+#		#$dgv_trades.Visible = $true
+#		$transnumber += $response.return | gm | ?{$_.Name -match "^\d"} | Select Name
+#		$transhistory = @()
+#	
+#		foreach($trans in $transnumber){
+#		$Builder = New-Object System.Object
+#			$Builder | Add-Member -Type NoteProperty -Name "Transaction" -Value $trade.name
+#			$Builder | Add-Member -Type NoteProperty -Name "OrderID" -Value $response.return.$($trade.name).order_id
+#			$Builder | Add-Member -Type NoteProperty -Name "Pair" -Value $response.return.$($trade.name).pair
+#			$Builder | Add-Member -Type NoteProperty -Name "Type" -Value $response.return.$($trade.name).type
+#			$Builder | Add-Member -Type NoteProperty -Name "Amount" -Value $response.return.$($trade.name).amount
+#			$Builder | Add-Member -Type NoteProperty -Name "Rate" -Value $response.return.$($trade.name).rate
+#			$Builder | Add-Member -Type NoteProperty -Name "Is Your Order" -Value $response.return.$($trade.name).is_your_order
+#			$tradehistory += $Builder
+#			
+#			##write-host $tradehistory
+#			Load-DataGridView -DataGridView $dgv_trades -Item $tradehistory
+#		}
+#	}
+#}
+
+function ExecuteOrder([string]$tradepair, [string]$tradetype, [string]$traderate, [string]$tradeamount)  {
+	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+	$postdata = "method=Trade&nonce=$nonce&pair=$tradepair&type=$tradetype&rate=$traderate&amount=$tradeamount"
+	$signedpost = GetStringHash($postdata)
+	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+	#write-host $r
+	$response = $r | ConvertFrom-Json
+	
+	if ($response.success -eq 1){
+		PopUp ("Order submitted successfully!")
+		Start-Sleep 1
+		GetOrderInfo
+		Start-Sleep 1
+		GetUserInfo
+	}else{
+		PopUp ("There was an error submitting your order. Error message from BTCe:`r`n`r`n$($response.error)")
+	}
+}
+
+function CancelOrder([string]$orderid){
+	$nonce = (Get-Date -uformat %s) -Replace("[,\.]\d*", "")
+	$postdata = "method=CancelOrder&nonce=$nonce&order_id=$orderid"
+	$signedpost = GetStringHash($postdata)
+	$r = Invoke-WebRequest -Uri $apiuri -Method POST -Headers @{"Key" = $apikey; "Sign" = $signedpost} -Body $postdata -ContentType "application/x-www-form-urlencoded" -UserAgent "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
+	#write-hostd $r
+	$response = $r | ConvertFrom-Json
+	
+	if ($response.success -eq 1){
+		PopUp ("Order cancelled successfully!")
+		Start-Sleep 1
+		GetOrderInfo
+		Start-Sleep 1
+		GetUserInfo	
+	}else{
+		PopUp ("There was an error submitting your order. Error from BTCe:`r`n`r`n$($response.error)")
+	}
+}
+
+function UpdatePairInfo($p){
+	# Set necessary global variables
+	Set-Variable -Name pair -Value $p -Scope Global	
+	Set-Variable -Name pairid -Value $p.Replace("/", "_").ToLower() -Scope Global
+	Set-Variable -Name pairfirst -Value $pair.Split("/")[0].ToUpper() -Scope Global
+	Set-Variable -Name pairsecond -Value $pair.Split("/")[1].ToUpper() -Scope Global
+	Set-Variable -Name depthuri -Value "$($uri)/api/2/$pairid/depth" -Scope Global
+	GetUserInfo
+	
+	# Modify necessary form controls
+	$formMain.Text = "BTC-e Cockpit - $pair"
+	$lbl_sellavail.Text = $pairfirst+":"
+	$lbl_selltotal.Text = $pairsecond+":"
+	$lbl_buyavail.Text = $pairsecond+":"
+	$lbl_buytotal.Text = $pairfirst+":"
+	$gbox_buy.Text = "Buy "+$pairfirst
+	$gbox_sell.Text = "Sell "+$pairfirst
+	$txt_buyfee.Clear()
+	$txt_buyprice.Clear()
+	$txt_buytotal.Clear()
+	$txt_sellfee.Clear()
+	$txt_sellprice.Clear()
+	$txt_selltotal.Clear()
+	
+}
+
+function CalculateSell{
+	[decimal]$calcfeeperc = GetBTCeFee($pairid)
+	[decimal]$calcsellamnt = $txt_sellavail.Text
+	[decimal]$calcsellprice = $txt_sellprice.Text
+	
+	if (($calcsellamnt -gt 0) -and ($calcsellprice -gt 0)){
+		$calcselltotal = [math]::Round(($calcsellamnt * $calcsellprice), $rounddec)
+		[decimal]$calcfee = [math]::round((($calcselltotal * $calcfeeperc) / 100), 4)
+		$txt_sellfee.Text = "$calcfee $pairsecond"
+		$calcselltotal = $calcselltotal - $calcfee
+		$txt_selltotal.Text = [math]::Round($calcselltotal, $rounddec)
+	}	
+}
+
+function CalculateBuy{
+	[decimal]$calcfeeperc = GetBTCeFee($pairid)
+	[decimal]$calcbuyavail = $txt_buyavail.Text
+	[decimal]$calcbuyprice = $txt_buyprice.Text
+	
+	if (($calcbuyavail -gt 0) -and ($calcbuyprice -gt 0)){
+		$calcbuytotal = [math]::round(($calcbuyavail / $calcbuyprice), $rounddec)
+		if ($calcbuytotal -ge 0){
+			[decimal]$calcfee = [math]::round((($calcbuytotal * $calcfeeperc) / 100), 4)
+			$txt_buyfee.Text = "$calcfee $pairfirst"
+			$calcbuytotal = $calcbuytotal - $calcfee #- 0.0001 # <--horrible hack (see todo rounding down)
+			$txt_buytotal.Text = [math]::round($calcbuytotal, $rounddec)
+		}	
+		else {$txt_buytotal.Text = "0"}
+	}	
+}
+
+function OnApplicationLoad {
+	return $true #return true for success or false for failure
+}
+
+function OnApplicationExit {
+	$script:ExitCode = 0 #Set the exit code for the Packager
+}
+#endregion
+
+#region Configuration File
+$path = $PSScriptRoot+"/"
+$conffile = "btce.conf"
+if (Test-Path $path$conffile){
+	$c = Get-Content $path$conffile | ConvertFrom-Json
+	$apikey = $c.config.apikey
+	$apisecret = $c.config.apisecret
+}
+else{PopUp("Configuration file not found: $path$conffile. Account information will not be available until the issue is resolved.")}
+
+#endregion
+
+#region Control Helper Functions
+function Load-ComboBox 
+{
+<#
+	.SYNOPSIS
+		This functions helps you load items into a ComboBox.
+
+	.DESCRIPTION
+		Use this function to dynamically load items into the ComboBox control.
+
+	.PARAMETER  ComboBox
+		The ComboBox control you want to add items to.
+
+	.PARAMETER  Items
+		The object or objects you wish to load into the ComboBox's Items collection.
+
+	.PARAMETER  DisplayMember
+		Indicates the property to display for the items in this control.
+	
+	.PARAMETER  Append
+		Adds the item(s) to the ComboBox without clearing the Items collection.
+	
+	.EXAMPLE
+		Load-ComboBox $combobox1 "Red", "White", "Blue"
+	
+	.EXAMPLE
+		Load-ComboBox $combobox1 "Red" -Append
+		Load-ComboBox $combobox1 "White" -Append
+		Load-ComboBox $combobox1 "Blue" -Append
+	
+	.EXAMPLE
+		Load-ComboBox $combobox1 (Get-Process) "ProcessName"
+#>
+	Param (
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		[System.Windows.Forms.ComboBox]$ComboBox,
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		$Items,
+	    [Parameter(Mandatory=$false)]
+		[string]$DisplayMember,
+		[switch]$Append
+	)
+	
+	if(-not $Append)
+	{
+		$ComboBox.Items.Clear()	
+	}
+	
+	if($Items -is [Object[]])
+	{
+		$ComboBox.Items.AddRange($Items)
+	}
+	elseif ($Items -is [Array])
+	{
+		$ComboBox.BeginUpdate()
+		foreach($obj in $Items)
+		{
+			$ComboBox.Items.Add($obj)	
+		}
+		$ComboBox.EndUpdate()
+	}
+	else
+	{
+		$ComboBox.Items.Add($Items)	
+	}
+
+	$ComboBox.DisplayMember = $DisplayMember	
+}
+
+function Load-DataGridView
+{
+	<#
+	.SYNOPSIS
+		This functions helps you load items into a DataGridView.
+
+	.DESCRIPTION
+		Use this function to dynamically load items into the DataGridView control.
+
+	.PARAMETER  DataGridView
+		The ComboBox control you want to add items to.
+
+	.PARAMETER  Item
+		The object or objects you wish to load into the ComboBox's items collection.
+	
+	.PARAMETER  DataMember
+		Sets the name of the list or table in the data source for which the DataGridView is displaying data.
+
+	#>
+	Param (
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		[System.Windows.Forms.DataGridView]$DataGridView,
+		[ValidateNotNull()]
+		[Parameter(Mandatory=$true)]
+		$Item,
+	    [Parameter(Mandatory=$false)]
+		[string]$DataMember
+	)
+	$DataGridView.SuspendLayout()
+	$DataGridView.DataMember = $DataMember
+	
+	if ($Item -is [System.ComponentModel.IListSource]`
+	-or $Item -is [System.ComponentModel.IBindingList] -or $Item -is [System.ComponentModel.IBindingListView] )
+	{
+		$DataGridView.DataSource = $Item
+	}
+	else
+	{
+		$array = New-Object System.Collections.ArrayList
+		
+		if ($Item -is [System.Collections.IList])
+		{
+			$array.AddRange($Item)
+		}
+		else
+		{	
+			$array.Add($Item)	
+		}
+		$DataGridView.DataSource = $array
+	}
+	
+	$DataGridView.ResumeLayout()
+}
+
+function ConvertTo-DataTable
+{
+	<#
+		.SYNOPSIS
+			Converts objects into a DataTable.
+	
+		.DESCRIPTION
+			Converts objects into a DataTable, which are used for DataBinding.
+	
+		.PARAMETER  InputObject
+			The input to convert into a DataTable.
+	
+		.PARAMETER  Table
+			The DataTable you wish to load the input into.
+	
+		.PARAMETER RetainColumns
+			This switch tells the function to keep the DataTable's existing columns.
+		
+		.PARAMETER FilterWMIProperties
+			This switch removes WMI properties that start with an underline.
+	
+		.EXAMPLE
+			$DataTable = ConvertTo-DataTable -InputObject (Get-Process)
+	#>
+	[OutputType([System.Data.DataTable])]
+	param(
+	[ValidateNotNull()]
+	$InputObject, 
+	[ValidateNotNull()]
+	[System.Data.DataTable]$Table,
+	[switch]$RetainColumns,
+	[switch]$FilterWMIProperties)
+	
+	if($Table -eq $null)
+	{
+		$Table = New-Object System.Data.DataTable
+	}
+
+	if($InputObject-is [System.Data.DataTable])
+	{
+		$Table = $InputObject
+	}
+	else
+	{
+		if(-not $RetainColumns -or $Table.Columns.Count -eq 0)
+		{
+			#Clear out the Table Contents
+			$Table.Clear()
+
+			if($InputObject -eq $null){ return } #Empty Data
+			
+			$object = $null
+			#find the first non null value
+			foreach($item in $InputObject)
+			{
+				if($item -ne $null)
+				{
+					$object = $item
+					break	
+				}
+			}
+
+			if($object -eq $null) { return } #All null then empty
+			
+			#Get all the properties in order to create the columns
+			foreach ($prop in $object.PSObject.Get_Properties())
+			{
+				if(-not $FilterWMIProperties -or -not $prop.Name.StartsWith('__'))#filter out WMI properties
+				{
+					#Get the type from the Definition string
+					$type = $null
+					
+					if($prop.Value -ne $null)
+					{
+						try{ $type = $prop.Value.GetType() } catch {}
+					}
+
+					if($type -ne $null) # -and [System.Type]::GetTypeCode($type) -ne 'Object')
+					{
+		      			[void]$table.Columns.Add($prop.Name, $type) 
+					}
+					else #Type info not found
+					{ 
+						[void]$table.Columns.Add($prop.Name) 	
+					}
+				}
+		    }
+			
+			if($object -is [System.Data.DataRow])
+			{
+				foreach($item in $InputObject)
+				{	
+					$Table.Rows.Add($item)
+				}
+				return  @(,$Table)
+			}
+		}
+		else
+		{
+			$Table.Rows.Clear()	
+		}
+		
+		foreach($item in $InputObject)
+		{		
+			$row = $table.NewRow()
+			
+			if($item)
+			{
+				foreach ($prop in $item.PSObject.Get_Properties())
+				{
+					if($table.Columns.Contains($prop.Name))
+					{
+						$row.Item($prop.Name) = $prop.Value
+					}
+				}
+			}
+			[void]$table.Rows.Add($row)
+		}
+	}
+
+	return @(,$Table)	
+}
+#endregion
+
+#region Form Controls
+
+$FormEvent_Load={
+	# Build market pair combo box
+	$tradepairs | % {$combo_pairs.Items.Add($_.Replace("_", "/").ToUpper())}
+	$combo_pairs.SelectedIndex = 4	# Set the default selected value to LTC/USD
+	$txt_wallthreshold.Text = $global:wall
+	$txt_refreshint.Text = $global:refresh/1000
+	UpdateBTCeOrderBook
+	Start-Sleep 1
+	GetTradeHistory
+	$timer1.Interval = $refresh
+}
+
+$timer1_Tick={
+	UpdateBTCeOrderBook
+}
+
+$btn_sellcalc_Click={
+	CalculateSell
+}
+
+$btn_buycalc_Click={
+	CalculateBuy
+}	
+
+$combo_pairs_SelectedIndexChanged={
+	UpdatePairInfo($combo_pairs.SelectedItem)
+	Start-Sleep 1
+	GetOrderInfo
+}
+
+$btnupdatecurrentusd_Click={
+	GetUserInfo
+}
+
+$btnupdatetopbuyprice_Click={
+	$txt_buyprice.Text = $bidhigh
+}
+
+$btn_updatecurrentltc_Click={
+	GetUserInfo
+}
+
+$btnupdatetopsellprice_Click={
+	$txt_sellprice.Text = $sellhigh
+}
+
+$btn_updateorderinfo_Click={
+	GetOrderInfo
+}
+
+$btn_updateavailfunds_Click={
+	GetUserInfo
+}
+
+$btn_sellorder_Click={
+	CalculateSell
+	if(($txt_sellprice.Text -gt 0) -and ($txt_sellavail.Text -gt 0)){
+		if($txt_sellavail.Text -le $availsellfunds){
+			$pair = $tradepairs[$($combo_pairs.SelectedIndex)]
+			$result = InputBox "Execute Order" "Executing sell order with the following parameters:`r`n`r`n Pair: $pair`r`n Type: sell`r`n Rate: $($txt_sellprice.Text)`r`n Amount: $($txt_sellavail.Text)`r`n`r`n If you would like to execute this order, type 'YES' in the field below:" ""
+			if ($result -ceq "YES"){
+				ExecuteOrder $pair "sell" $($txt_sellprice.Text) $($txt_sellavail.Text)
+			}
+		}else{PopUp("Insufficient $pairfirst")}
+	}else {PopUp("Please make sure to fill in the sell price and sell amount before submitting an order.")}
+}
+
+$btn_buyorder_Click={
+	CalculateBuy
+	if(($txt_buyprice.Text -gt 0) -and ($txt_buyavail.Text -gt 0)){
+		if($txt_buyavail.Text -le $availbuyfunds){
+			$pair = $tradepairs[$($combo_pairs.SelectedIndex)]
+			$result = InputBox "Execute Order" "Executing buy order with the following parameters:`r`n`r`n Pair: $pair`r`n Type: buy`r`n Rate: $($txt_buyprice.Text)`r`n Amount: $($txt_buytotal.Text)`r`n`r`n If you would like to execute this order, type 'YES' in the field below:" ""
+			if ($result -ceq "YES"){
+				ExecuteOrder $pair "buy" $($txt_buyprice.Text) $($txt_buytotal.Text)
+			}
+		}else{PopUp("Insufficient $pairsecond")}
+	}else {PopUp("Please make sure to fill in the purchase price and amount before submitting an order.")}
+}
+
+$btn_cancelorder_Click={
+	$orderid = $dgv_orders.Item(0,$dgv_orders.SelectedRows.Index).Value
+	if ($orderid){
+		$response = InputBox "Cancel Order" "You are about to cancel order ID: $orderid`r`n`r`nPlease type 'YES' if you would like to do this:" ""
+		if($response -ceq "YES"){
+			CancelOrder($orderid)
+		}
+	}
+}
+
+$dgv_ask_CellDoubleClick=[System.Windows.Forms.DataGridViewCellEventHandler]{
+	$txt_sellprice.Text = $dgv_ask.Item(0,$dgv_ask.CurrentRow.Index).Value
+}
+
+$dgv_bid_CellDoubleClick=[System.Windows.Forms.DataGridViewCellEventHandler]{
+	$txt_buyprice.Text = $dgv_bid.Item(0,$dgv_bid.CurrentRow.Index).Value	
+}
+
+$dgv_orders_RowHeaderMouseClick=[System.Windows.Forms.DataGridViewCellMouseEventHandler]{
+	$btn_cancelorder.Enabled = $true
+}
+
+$txt_sellavail_Leave={
+	if ($txt_sellavail.Text.StartsWith(".")){
+		$txt_sellavail.Text = "0"+$txt_sellavail.Text
+	}
+}
+
+$txt_buyavail_Leave={
+	if ($txt_buyavail.Text.StartsWith(".")){
+		$txt_buyavail.Text = "0"+$txt_buyavail.Text
+	}
+}
+
+$txt_wallthreshold_KeyPress=[System.Windows.Forms.KeyPressEventHandler]{
+	If ($_.KeyChar -eq 13) { # Enter was pressed
+		$global:wall = $txt_wallthreshold.Text
+    }
+}
+
+$txt_refreshint_KeyPress=[System.Windows.Forms.KeyPressEventHandler]{
+	If ($_.KeyChar -eq 13) { # Enter was pressed
+		$timer1.Interval = [int]$txt_refreshint.Text * 1000
+    }
+}
+
+$exitToolStripMenuItem_Click={
+	$formMain.Close()
+}
+
+$tbar_opacity_Scroll={
+	$formMain.Opacity = (($tbar_opacity.Value / 100)*10)
+}
+#endregion]]></Code>
+  <Mode>1</Mode>
+  <Assemblies>
+    <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
+    <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</Assembly>
+    <Assembly>System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <Assembly>System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+  </Assemblies>
+  <Packager>
+    <General>
+      <PackageName>BTCeOrderBook</PackageName>
+      <PackageIcon>C:\Users\Dan\ownCloud\Scripts\BTC\BTCommander\src\litecoin.ico</PackageIcon>
+      <ManifestCreation>1</ManifestCreation>
+      <CustomManifest>
+      </CustomManifest>
+      <Platform>4</Platform>
+      <RunSTA>0</RunSTA>
+      <PowerShellVersion>3</PowerShellVersion>
+    </General>
+    <Security>
+      <Username>
+      </Username>
+      <Password>
+      </Password>
+      <SignPackage>False</SignPackage>
+      <Certificate>
+      </Certificate>
+      <CertificatePassword>
+      </CertificatePassword>
+      <RunAs>0</RunAs>
+    </Security>
+    <Version>
+      <FileVersion>1.0.0.0</FileVersion>
+      <ProductVersion>1.0.0.0</ProductVersion>
+      <ProductName>
+      </ProductName>
+      <Description>
+      </Description>
+      <Company>Dealer.com</Company>
+      <Copyright>
+      </Copyright>
+      <InternalName>
+      </InternalName>
+      <OriginalFileName>
+      </OriginalFileName>
+      <Comment>
+      </Comment>
+    </Version>
+  </Packager>
